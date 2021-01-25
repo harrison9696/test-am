@@ -1,0 +1,24 @@
+.btn {
+	padding: 1.3rem 3.7rem;
+	border-radius: 50px;
+	background-color: transparent;
+	color: $color-primary;
+	border: 1px solid $color-primary;
+	transition: all 0.5s ease;
+
+	&:hover {
+		background-color: $color-primary;
+		color: $color-white;
+	}
+
+	&--fixed {
+		padding: 2.3rem 3.7rem;
+		background-color: $color-primary;
+		color: $color-white;
+
+		&:hover {
+			background-color: $color-white;
+			color: $color-primary;
+		}
+	}
+}

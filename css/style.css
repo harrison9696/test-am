@@ -304,6 +304,36 @@ a {
     display: flex;
     justify-content: space-between; }
   .navbar__navigation {
-    padding-top: 2.5rem; }
+    padding: 2.5rem 0; }
   .navbar__navigation-list {
     display: flex; }
+
+.btn {
+  padding: 1.3rem 3.7rem;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #845bb3;
+  border: 1px solid #845bb3;
+  transition: all 0.5s ease; }
+  .btn:hover {
+    background-color: #845bb3;
+    color: #fff; }
+  .btn--fixed {
+    padding: 2.3rem 3.7rem;
+    background-color: #845bb3;
+    color: #fff; }
+    .btn--fixed:hover {
+      background-color: #fff;
+      color: #845bb3; }
+
+.showcase {
+  margin-top: 8rem; }
+  .showcase__container {
+    display: flex;
+    height: 70vh;
+    position: relative; }
+  .showcase__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 1.3rem; }

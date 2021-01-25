@@ -1,0 +1,16 @@
+.showcase {
+	margin-top: 8rem;
+
+	&__container {
+		display: flex;
+		height: 70vh;
+		position: relative;
+	}
+
+	&__content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding-bottom: 1.3rem;
+	}
+}
