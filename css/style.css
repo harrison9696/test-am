@@ -294,3 +294,16 @@ a {
 
 .u-text-uppercase {
   text-transform: uppercase; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  .navbar__flex {
+    display: flex;
+    justify-content: space-between; }
+  .navbar__navigation {
+    padding-top: 2.5rem; }
+  .navbar__navigation-list {
+    display: flex; }
