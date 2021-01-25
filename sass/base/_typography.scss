@@ -1,0 +1,44 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
+  color: $color-gray-dark;
+  background-color: $color-white;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  color: $color-gray-dark;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $color-gray-dark;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text {
+
+  &--dark {
+    color: $color-gray-dark;
+  }
+
+  &--light {
+    color: $color-gray-light;
+  }
+
+  &--gray {
+    color: $color-gray;
+  }
+}

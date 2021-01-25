@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines 1rem. 1rem = 10px. 10px/16px = 62.5%
+  font-size: 62.5%;
+
+  @include respond(big-desk) {
+    font-size: 68.75%; // 1rem = 11px
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $color-white;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 112.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container-no-max-width {
+  margin: auto;
+  overflow: hidden;
+}
+
+.section {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-no-bottom {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+button {
+
+  &:focus {
+    outline: none;
+  }
+}
