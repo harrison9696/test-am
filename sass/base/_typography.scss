@@ -45,3 +45,11 @@ a {
 		color: $color-gray;
 	}
 }
+
+.heading {
+	font-family: 'Poppins', sans-serif;
+
+	&--primary {
+		font-size: 4rem;
+	}
+}

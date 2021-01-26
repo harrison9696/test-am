@@ -1,0 +1,43 @@
+.homepage {
+	height: 50rem;
+	margin-bottom: 20rem;
+
+	&__flex {
+		display: flex;
+	}
+
+	&__image {
+		flex: 1;
+		overflow: hidden;
+
+		img {
+			object-fit: cover;
+		}
+	}
+
+	&__text {
+		flex: 1;
+	}
+
+	&__text-content {
+		padding-bottom: 1.3rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+	}
+}
+
+.who {
+	.btn {
+		max-width: 21rem;
+		text-align: center;
+	}
+}
+
+.what {
+	.btn {
+		max-width: 23rem;
+		text-align: center;
+	}
+}
