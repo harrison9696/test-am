@@ -1,0 +1,30 @@
+.work {
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(25rem, auto));
+		grid-gap: 2rem;
+		justify-content: center;
+	}
+
+	&__grid-item {
+		position: relative;
+		width: 25rem;
+		margin: 1rem;
+		height: 100%;
+	}
+
+	&__project-img {
+		overflow: hidden;
+		height: 35rem;
+
+		img {
+			width: 100%;
+			overflow: hidden;
+			height: 35rem;
+			object-fit: cover;
+		}
+	}
+
+	&__project-title {
+	}
+}
