@@ -50,6 +50,12 @@ body {
 button:focus {
   outline: none; }
 
+input[type='email'],
+input[type='submit'] {
+  padding: 0.8rem;
+  outline: none;
+  border: none; }
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -67,8 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
-  color: #111111; }
+  font-family: 'Poppins', sans-serif; }
 
 ul {
   list-style: none; }
@@ -76,7 +81,6 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #111111;
   font-family: 'Montserrat', sans-serif; }
 
 .text--dark {
@@ -357,6 +361,29 @@ a {
 
 .work__project-title {
   transition: all 0.5s ease; }
+
+.footer {
+  background-color: #111111;
+  color: #f7f7f7; }
+  .footer__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .footer__man {
+    flex: 1; }
+  .footer__liv {
+    flex: 1; }
+  .footer__contact {
+    flex: 1; }
+  .footer__newsletter {
+    flex: 3; }
+  .footer__logo {
+    border-bottom: 1px solid #f7f7f7; }
+    .footer__logo h1 {
+      padding-bottom: 2rem; }
+  .footer__smallprint {
+    display: flex;
+    justify-content: space-between; }
 
 .showcase {
   height: 100vh; }

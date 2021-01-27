@@ -1,0 +1,39 @@
+.footer {
+	background-color: $color-gray-dark;
+	color: $color-gray-light;
+
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__man {
+		flex: 1;
+	}
+
+	&__liv {
+		flex: 1;
+	}
+
+	&__contact {
+		flex: 1;
+	}
+
+	&__newsletter {
+		flex: 3;
+	}
+
+	&__logo {
+		border-bottom: 1px solid $color-gray-light;
+
+		h1 {
+			padding-bottom: 2rem;
+		}
+	}
+
+	&__smallprint {
+		display: flex;
+		justify-content: space-between;
+	}
+}

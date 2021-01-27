@@ -56,3 +56,10 @@ button {
 		outline: none;
 	}
 }
+
+input[type='email'],
+input[type='submit'] {
+	padding: 0.8rem;
+	outline: none;
+	border: none;
+}
