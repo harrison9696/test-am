@@ -501,6 +501,8 @@ a {
     bottom: 0;
     left: 0;
     padding-bottom: 1.3rem; }
+  .showcase .txt {
+    border-right: 0.2rem solid #222222; }
 
 .homepage {
   margin-bottom: 20rem; }
