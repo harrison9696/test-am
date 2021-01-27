@@ -26,7 +26,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: #f7f7f7;
   overflow-x: hidden; }
 
 .container {
@@ -62,7 +62,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   letter-spacing: 0.05rem;
-  color: #777777; }
+  color: #676767; }
 
 p {
   font-family: 'Montserrat', sans-serif; }
@@ -90,7 +90,7 @@ a {
   color: #f7f7f7; }
 
 .text-color--gray {
-  color: #777777; }
+  color: #676767; }
 
 .text-color--primary {
   color: #845bb3; }
@@ -110,14 +110,35 @@ a {
   font-family: 'Poppins', sans-serif; }
   .heading--large {
     font-size: 3.3rem; }
+    @media (max-width: 630px) {
+      .heading--large {
+        font-size: 3rem; } }
   .heading--medium {
     font-size: 2.3rem; }
+    @media (max-width: 630rem) {
+      .heading--medium {
+        font-size: 2rem; } }
   .heading--small {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 600; }
   .heading--typewriter {
     font-size: 10rem; }
+    @media (max-width: 491px) {
+      .heading--typewriter {
+        font-size: 8rem; } }
+    @media (max-width: 400px) {
+      .heading--typewriter {
+        font-size: 6rem; } }
+  .heading--typewriter-secondary {
+    font-size: 5rem;
+    font-weight: 500; }
+    @media (max-width: 491px) {
+      .heading--typewriter-secondary {
+        font-size: 4rem; } }
+    @media (max-width: 400px) {
+      .heading--typewriter-secondary {
+        font-size: 3.5rem; } }
 
 .u-text-center {
   text-align: center; }
@@ -447,6 +468,14 @@ a {
   grid-template-columns: repeat(3, minmax(20rem, 1fr));
   grid-gap: 4rem;
   justify-content: center; }
+  @media (max-width: 578px) {
+    .work__grid {
+      grid-template-columns: repeat(2, minmax(20rem, 1fr));
+      grid-gap: 2rem; } }
+  @media (max-width: 372px) {
+    .work__grid {
+      grid-template-columns: repeat(1, minmax(20rem, 1fr));
+      grid-gap: 2rem; } }
 
 .work__grid-item {
   height: 100%;
@@ -455,7 +484,7 @@ a {
   .work__grid-item:hover > .work__project-img > img {
     opacity: 0.9; }
   .work__grid-item:hover > .work__project-title {
-    transform: translate(10px); }
+    text-decoration: underline; }
 
 .work__project-img {
   overflow: hidden; }
@@ -466,7 +495,11 @@ a {
     transition: all 0.5s ease; }
 
 .work__project-title {
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center; }
 
 .footer {
   background-color: #222222;
@@ -475,14 +508,30 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
+    @media (max-width: 741px) {
+      .footer__flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'liv man contact' 'newsletter newsletter newsletter'; } }
+    @media (max-width: 473px) {
+      .footer__flex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'liv' 'man' 'contact' 'newsletter'; } }
   .footer__man {
-    flex: 1; }
+    flex: 1;
+    grid-area: man; }
   .footer__liv {
-    flex: 1; }
+    flex: 1;
+    grid-area: liv; }
   .footer__contact {
-    flex: 1; }
+    flex: 1;
+    grid-area: contact; }
   .footer__newsletter {
-    flex: 3; }
+    flex: 3;
+    grid-area: newsletter; }
   .footer__logo {
     border-bottom: 1px solid #f7f7f7; }
     .footer__logo h1 {
@@ -502,21 +551,42 @@ a {
     left: 0;
     padding-bottom: 1.3rem; }
   .showcase .txt {
-    border-right: 0.2rem solid #222222; }
+    border-right: 0.2rem solid #676767; }
 
 .homepage {
   margin-bottom: 20rem; }
+  @media (max-width: 770px) {
+    .homepage {
+      margin-bottom: 10rem; } }
   .homepage__flex {
     display: flex; }
+    @media (max-width: 770px) {
+      .homepage__flex {
+        flex-direction: column; } }
   .homepage__image {
     flex: 1;
-    overflow: hidden; }
+    overflow: hidden;
+    order: 1; }
     .homepage__image img {
       object-fit: cover;
       width: 100%;
       height: 100%; }
   .homepage__text {
-    flex: 1; }
+    flex: 1;
+    order: 2; }
+    @media (max-width: 770px) {
+      .homepage__text {
+        padding-right: 6rem;
+        padding-left: 6rem;
+        margin-top: 10rem; } }
+    @media (max-width: 700px) {
+      .homepage__text {
+        padding-right: 4rem;
+        padding-left: 4rem; } }
+    @media (max-width: 600px) {
+      .homepage__text {
+        padding-right: 2rem;
+        padding-left: 2rem; } }
   .homepage__text-content {
     padding-bottom: 1.3rem;
     display: flex;

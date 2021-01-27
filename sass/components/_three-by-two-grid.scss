@@ -4,6 +4,16 @@
 		grid-template-columns: repeat(3, minmax(20rem, 1fr));
 		grid-gap: 4rem;
 		justify-content: center;
+
+		@media (max-width: 578px) {
+			grid-template-columns: repeat(2, minmax(20rem, 1fr));
+			grid-gap: 2rem;
+		}
+
+		@media (max-width: 372px) {
+			grid-template-columns: repeat(1, minmax(20rem, 1fr));
+			grid-gap: 2rem;
+		}
 	}
 
 	&__grid-item {
@@ -16,7 +26,7 @@
 		}
 
 		&:hover > .work__project-title {
-			transform: translate(10px);
+			text-decoration: underline;
 		}
 	}
 
@@ -33,5 +43,9 @@
 
 	&__project-title {
 		transition: all 0.5s ease;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
 	}
 }

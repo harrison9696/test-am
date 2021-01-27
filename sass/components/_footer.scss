@@ -6,22 +6,46 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+
+		@media (max-width: 741px) {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+				'liv man contact'
+				'newsletter newsletter newsletter';
+		}
+
+		@media (max-width: 473px) {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+				'liv'
+				'man'
+				'contact'
+				'newsletter';
+		}
 	}
 
 	&__man {
 		flex: 1;
+		grid-area: man;
 	}
 
 	&__liv {
 		flex: 1;
+		grid-area: liv;
 	}
 
 	&__contact {
 		flex: 1;
+		grid-area: contact;
 	}
 
 	&__newsletter {
 		flex: 3;
+		grid-area: newsletter;
 	}
 
 	&__logo {

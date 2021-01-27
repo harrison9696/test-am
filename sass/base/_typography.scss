@@ -69,10 +69,18 @@ a {
 
 	&--large {
 		font-size: 3.3rem;
+
+		@media (max-width: 630px) {
+			font-size: 3rem;
+		}
 	}
 
 	&--medium {
 		font-size: 2.3rem;
+
+		@media (max-width: 630rem) {
+			font-size: 2rem;
+		}
 	}
 
 	&--small {
@@ -83,5 +91,26 @@ a {
 
 	&--typewriter {
 		font-size: 10rem;
+
+		@media (max-width: 491px) {
+			font-size: 8rem;
+		}
+
+		@media (max-width: 400px) {
+			font-size: 6rem;
+		}
+	}
+
+	&--typewriter-secondary {
+		font-size: 5rem;
+		font-weight: 500;
+
+		@media (max-width: 491px) {
+			font-size: 4rem;
+		}
+
+		@media (max-width: 400px) {
+			font-size: 3.5rem;
+		}
 	}
 }
