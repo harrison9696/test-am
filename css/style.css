@@ -26,7 +26,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #f7f7f7;
+  background-color: #fff;
   overflow-x: hidden; }
 
 .container {
@@ -62,7 +62,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   letter-spacing: 0.05rem;
-  color: #111111; }
+  color: #777777; }
 
 p {
   font-family: 'Montserrat', sans-serif; }
@@ -83,19 +83,41 @@ a {
   cursor: pointer;
   font-family: 'Montserrat', sans-serif; }
 
-.text--dark {
-  color: #111111; }
+.text-color--dark {
+  color: #222222; }
 
-.text--light {
+.text-color--light {
   color: #f7f7f7; }
 
-.text--gray {
-  color: #333333; }
+.text-color--gray {
+  color: #777777; }
+
+.text-color--primary {
+  color: #845bb3; }
+
+.text-style--nav {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: all 0.5s ease; }
+  .text-style--nav:hover {
+    color: #845bb3; }
+
+.text-style--smallprint {
+  font-size: 1.2rem; }
 
 .heading {
   font-family: 'Poppins', sans-serif; }
-  .heading--primary {
-    font-size: 4rem; }
+  .heading--large {
+    font-size: 3.3rem; }
+  .heading--medium {
+    font-size: 2.3rem; }
+  .heading--small {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600; }
+  .heading--typewriter {
+    font-size: 10rem; }
 
 .u-text-center {
   text-align: center; }
@@ -403,9 +425,12 @@ a {
   border-radius: 50px;
   background-color: transparent;
   color: #845bb3;
-  border: 1px solid #845bb3;
+  border: 2px solid #845bb3;
   transition: all 0.5s ease;
-  display: inline-block; }
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700; }
   .btn:hover {
     background-color: #845bb3;
     color: #fff; }
@@ -444,7 +469,7 @@ a {
   transition: all 0.5s ease; }
 
 .footer {
-  background-color: #111111;
+  background-color: #222222;
   color: #f7f7f7; }
   .footer__flex {
     display: flex;
@@ -498,7 +523,7 @@ a {
     height: 100%; }
 
 .who .btn {
-  max-width: 21rem;
+  max-width: 20rem;
   text-align: center; }
 
 .what .btn {

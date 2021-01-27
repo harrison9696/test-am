@@ -4,7 +4,7 @@ body {
 	font-size: 1.6rem;
 	line-height: 1.6;
 	letter-spacing: 0.05rem;
-	color: $color-gray-dark;
+	color: $color-gray;
 }
 
 p {
@@ -30,7 +30,7 @@ a {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.text {
+.text-color {
 	&--dark {
 		color: $color-gray-dark;
 	}
@@ -42,12 +42,46 @@ a {
 	&--gray {
 		color: $color-gray;
 	}
+	&--primary {
+		color: $color-primary;
+	}
+}
+
+.text-style {
+	&--nav {
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.8rem;
+		font-weight: 600;
+		transition: all 0.5s ease;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+
+	&--smallprint {
+		font-size: 1.2rem;
+	}
 }
 
 .heading {
 	font-family: 'Poppins', sans-serif;
 
-	&--primary {
-		font-size: 4rem;
+	&--large {
+		font-size: 3.3rem;
+	}
+
+	&--medium {
+		font-size: 2.3rem;
+	}
+
+	&--small {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	&--typewriter {
+		font-size: 10rem;
 	}
 }
