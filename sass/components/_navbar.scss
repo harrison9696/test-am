@@ -16,5 +16,67 @@
 
 	&__navigation-list {
 		display: flex;
+
+		// mobile
+		@media (max-width: 768px) {
+			position: absolute;
+			top: 0;
+			right: 0px;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			width: 100%;
+			z-index: 20;
+			background-color: $color-gray-light;
+			transform: translateX(100%);
+			// transition: transform 0.3s ease;
+		}
+	}
+
+	&__navigation-item {
+		// mobile
+		@media (max-width: 768px) {
+			opacity: 0;
+			text-align: center;
+		}
+	}
+
+	// Hamburger menu
+	&__hamburger {
+		display: none;
+		cursor: pointer;
+		z-index: 30;
+		margin-top: 2.4rem;
+
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+
+	&__hamburger-line {
+		width: 25px;
+		height: 3px;
+		background-color: $color-gray;
+		margin-bottom: 5px;
+		transition: all 0.3s ease-in;
+	}
+
+	// Opens nav
+	.nav-active {
+		transform: translateX(0%);
+	}
+
+	// Animates hamburger
+	.active .line1 {
+		transform: rotate(-45deg) translate(-5px, 6px);
+	}
+
+	.active .line2 {
+		opacity: 0;
+	}
+
+	.active .line3 {
+		transform: rotate(45deg) translate(-5px, -6px);
 	}
 }

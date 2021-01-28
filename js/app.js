@@ -1,3 +1,5 @@
+// TYPEWRITER
+
 class TypeWriter {
 	constructor(txtElement, words, wait = 3000) {
 		this.txtElement = txtElement;
@@ -70,3 +72,45 @@ function init() {
 	// Init TypeWriter
 	new TypeWriter(txtElement, words, wait);
 }
+
+// HAMBURGER NAV
+
+const burger = document.querySelector('.navbar__hamburger');
+const nav = document.querySelector('.navbar__navigation-list');
+const navLinks = document.querySelectorAll('.navbar__navigation-item');
+
+const navSlide = () => {
+	// Toggle Nav
+	burger.addEventListener('click', () => {
+		nav.classList.toggle('nav-active');
+
+		// Animate links
+		navLinks.forEach((link, index) => {
+			if (link.style.animation) {
+				link.style.animation = '';
+			} else {
+				link.style.animation = `navLinkFade 0.5s ease forwards ${
+					index / 7 + 0.1
+				}s`;
+			}
+		});
+
+		// Animate hamburger
+		burger.classList.toggle('active');
+	});
+};
+
+// // Close Nav If A Link Is Clicked
+// navLinks.forEach(navLink => {
+// 	navLink.addEventListener('click', e => {
+// 		if (
+// 			nav.classList.contains('nav-active') &&
+// 			burger.classList.contains('active')
+// 		) {
+// 			nav.classList.toggle('nav-active');
+// 			burger.classList.toggle('active');
+// 		}
+// 	});
+// });
+
+navSlide();
