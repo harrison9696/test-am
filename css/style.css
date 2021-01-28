@@ -603,6 +603,9 @@ a {
     grid-template-rows: auto;
     grid-gap: 4rem;
     grid-template-areas: 'client email' 'message message' 'submit submit'; }
+    @media (max-width: 578px) {
+      .contact__grid {
+        grid-gap: 2rem; } }
   .contact__name {
     grid-area: client; }
     .contact__name input {

@@ -12,6 +12,10 @@
 			'client email'
 			'message message'
 			'submit submit';
+
+		@media (max-width: 578px) {
+			grid-gap: 2rem;
+		}
 	}
 
 	&__name {
