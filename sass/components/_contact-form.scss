@@ -1,0 +1,44 @@
+.contact {
+	background-color: $color-primary;
+	padding-bottom: 10rem;
+	padding-top: 10rem;
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 4rem;
+		grid-template-areas:
+			'client email'
+			'message message'
+			'submit submit';
+	}
+
+	&__name {
+		grid-area: client;
+
+		input {
+			width: 100%;
+		}
+	}
+
+	&__email {
+		grid-area: email;
+
+		input {
+			width: 100%;
+		}
+	}
+
+	&__message {
+		grid-area: message;
+
+		textarea {
+			width: 100%;
+		}
+	}
+
+	&__submit {
+		grid-area: submit;
+	}
+}

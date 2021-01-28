@@ -57,9 +57,15 @@ button {
 	}
 }
 
+input[type='text'],
 input[type='email'],
-input[type='submit'] {
+input[type='submit'],
+textarea {
 	padding: 0.8rem;
 	outline: none;
 	border: none;
+	font-family: 'Montserrat', sans-serif;
+	color: $color-gray-dark;
+	background-color: $color-white;
+	border-radius: 5px;
 }

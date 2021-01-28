@@ -16,7 +16,10 @@
 	&__image {
 		flex: 1;
 		overflow: hidden;
-		order: 1;
+
+		@media (max-width: 770px) {
+			order: 1;
+		}
 
 		img {
 			object-fit: cover;
@@ -27,7 +30,10 @@
 
 	&__text {
 		flex: 1;
-		order: 2;
+
+		@media (max-width: 770px) {
+			order: 2;
+		}
 
 		@media (max-width: 770px) {
 			padding-right: 6rem;
